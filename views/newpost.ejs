@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%- include('./patials/head.ejs'); %>
+<body>
+    <header>
+        <%- include('./patials/nav.ejs'); %>
+    </header>
+    <h2> Post New Blog</h2>
+    <div>
+        <form action="/createblog", method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" name = "title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="blog-body" class="form-label">blog made</label>
+              <input type="text"  name = "made" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="textarea" name = "body"  class="form-control" id="exampleInputPassword1">
+              </div>
+           
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+
+    
+</body>
+</html>
